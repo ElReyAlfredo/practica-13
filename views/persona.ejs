@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link href="/assets/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+      </tr>
+      <% for(let i = 0; i< data.length; i++) { %>
+      <tr>
+        <th><%=data[i].id %></th>
+        <th><%=data[i].nombre %></th>
+        <th><%=data[i].apellido %></th>
+        <th><%=data[i].edad %></th>
+      </tr>
+      <%} %>
+    </table>
+  </body>
+</html>
